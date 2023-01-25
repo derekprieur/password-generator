@@ -10,7 +10,7 @@ const InputCard = ({ password, setPassword }) => {
     const [hasNumbers, setHasNumbers] = useState(true)
     const [hasSymbols, setHasSymbols] = useState(true)
     const [availableCharacters, setAvailableCharacters] = useState(chars)
-    const [strength, setStrength] = useState('')
+    const [strength, setStrength] = useState('Medium')
 
     const updateAvailableCharacters = () => {
         let characters = ''
@@ -49,6 +49,7 @@ const InputCard = ({ password, setPassword }) => {
     useEffect(() => {
         updateAvailableCharacters()
     }, [hasUppercase, hasLowercase, hasNumbers, hasSymbols])
+
 
     return (
         <div className='w-full bg-[#24232c] mt-4 px-4 py-4'>
