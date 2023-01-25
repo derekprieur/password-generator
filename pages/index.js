@@ -17,7 +17,7 @@ export default function Home() {
         <div className='flex flex-col pt-16 px-4 max-w-xl mx-auto'>
           <h1 className='text-[#817d92] text-center text-base'>Key Master</h1>
           <PasswordCard password={password} />
-          <InputCard setPassword={setPassword} />
+          <InputCard password={password} setPassword={setPassword} />
         </div>
       </main>
     </>

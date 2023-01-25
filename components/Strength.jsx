@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Strength = () => {
+const Strength = ({ strength }) => {
     return (
         <div className='text-[#E6E5EA] mt-8'>
             <div className='px-4 bg-[#18171F] py-4 flex items-center justify-between'>
@@ -9,7 +9,7 @@ const Strength = () => {
                     <p className='text-lg'>MEDIUM</p>
                     <div className='flex gap-2'>
                         <div className='w-[10px] h-7 bg-[#F8CD65]' />
-                        <div className='w-[10px] h-7 bg-[#F8CD65]' />
+                        {strength.toLowerCase() === 'weak' || <div className='w-[10px] h-7 bg-[#F8CD65]' />}
                         <div className='w-[10px] h-7 bg-[#F8CD65]' />
                         <div className='w-[10px] h-7 border-2 border-[#E6E5EA]' />
                     </div>
